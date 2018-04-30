@@ -118,3 +118,21 @@ class DoublyLinkedList(object):
         for n in range(index):
             current = current.next
         current.data = value
+
+class printDLL:
+    def __init__(self):
+        print('--- Doubly Linked list start')
+        dll = DoublyLinkedList()
+        dll.append('Croissants')
+        dll.append('Pies')
+        dll.append('Danishes')
+        dll.append('Macaroons')
+        dll.append('Pretzels')
+        print('- Printed forwards:')
+        dll.print_forwards()
+        print('- Printed backwards:')
+        dll.print_backwards()
+        print('Insert new item to front of list')
+        dll.insert_head('honey cake')
+        print('Get first element: {}'.format(dll[0]))
+        print("/--- Doubly Linked list end")
